@@ -25,6 +25,8 @@ spec = Gem::Specification.new do |s|
   s.add_dependency('fiveruns_tuneup_core')
   s.add_dependency('merb-slices', '>= 0.9.5')
   s.add_dependency('echoe')
+  s.add_dependency('FakeWeb')
+  s.add_dependency('Shoulda')
   s.require_path = 'lib'
   s.files = %w(LICENSE README Rakefile TODO CHANGELOG) + Dir.glob("{lib,spec,app,public,stubs}/**/*")
 end
